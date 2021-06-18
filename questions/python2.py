@@ -199,6 +199,9 @@ def six(string):
 
 
 def seven(a, b, c):
+    num_list = sorted([a, b, c])
+    if num_list[1] - num_list[0] == num_list[2] - num_list[1]:
+        return True
     return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
