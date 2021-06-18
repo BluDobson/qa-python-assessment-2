@@ -243,6 +243,27 @@ def eight(string,  a):
 
 
 def nine(string1, string2):
+    small = min(len(string1), len(string2))
+    char_list = []
+    check_list = []
+    if small == len(string1):
+        for char in string2:
+            if char in string1:
+                char_list.append(char)
+        for char in string1:
+            if char in char_list:
+                check_list.append(char)
+        if len(check_list) == len(string1):
+            return True
+    if small == len(string2):
+        for char in string1:
+            if char in string2:
+                char_list.append(char)
+        for char in string2:
+            if char in char_list:
+                check_list.append(char)
+        if len(check_list) == len(string2):
+            return True
     return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
