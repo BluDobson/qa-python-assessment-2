@@ -31,7 +31,12 @@
 # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+    new_string = ""
+    for char in string:
+        new_string += char
+        new_string += char 
+        new_string += char
+    return new_string
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
