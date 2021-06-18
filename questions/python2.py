@@ -221,9 +221,11 @@ def seven(a, b, c):
     # <HINT>
     # Use the cli to access the documentation help(str.replace)
 
-
 def eight(string,  a):
-    return ""
+    half = len(string) / 2
+    first = int(half - a / 2)
+    last = int(half + a / 2)
+    return string[:first] + string[last:]
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
