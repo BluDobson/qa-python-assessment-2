@@ -287,6 +287,14 @@ def nine(string1, string2):
 
 
 def ten(x, y):
-    return []
+    result = []
+    count = 0
+    while len(result) < y:
+        new_answer = []
+        for num in range(0, x):
+            new_answer.append(num*count)
+        count += 1
+        result.append(new_answer)
+    return result
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
