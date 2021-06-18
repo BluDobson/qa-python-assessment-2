@@ -57,6 +57,14 @@ def one(string):
 
 
 def two(number):
+    nums = []
+    for num in range(2, number-1):
+        if number % num == 0:
+            nums.append(num)
+        else:
+            pass
+    if len(nums) == 0:
+        return True
     return False
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
